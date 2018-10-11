@@ -4,7 +4,7 @@ emotes = YAML.load_file('lib/emoticons.yml')
 # emotes = hash of emoticons
 
 def load_library(emotes)
-  emo_hash = emotes
+  return emotes
 end
 
 def get_japanese_emoticon
