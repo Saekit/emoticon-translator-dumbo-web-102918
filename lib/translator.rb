@@ -47,10 +47,12 @@ end
 #     "☜(⌒▽⌒)☞"=>"angel",
 #     "ヽ(ｏ`皿′ｏ)ﾉ"=>"angry"}
 #   }
-load_library('./lib/emoticons.yml')
-def get_japanese_emoticon(file_path, emoticon)
-  load_library(file_path)
 
+def get_japanese_emoticon(file_path, EN_emoticon)
+  library = load_library(file_path)
+  if library["get_emoticon"].include?(EN_emoticon)
+    library["get_emoticon"][EN_emoticon]
+  end
 end
 
 def get_english_meaning
