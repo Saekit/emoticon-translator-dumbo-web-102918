@@ -2,9 +2,10 @@
 require 'yaml'
 emotes = YAML.load_file('lib/emoticons.yml')
 # emotes = hash of emoticons
-emotes
+
 def load_library(emotes)
-  return emotes
+  emo_hash = emo_hash.inject({}){|memo,(k,v)| memo[k.to_sym] = v; memo}
+  emo_hash
 end
 
 def get_japanese_emoticon
