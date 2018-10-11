@@ -16,6 +16,7 @@ def load_library(file_path)
   translator
 end
 
+# {
 # "get_emoticon" => {
 #   "%)"=>"(゜.゜)",
 #   "8D"=>"(^0_0^)",
@@ -44,8 +45,9 @@ end
 #     ">゜))))彡"=>"fish",
 #     "o_O"=>"surprised",
 #     "☜(⌒▽⌒)☞"=>"angel",
-#     "ヽ(ｏ`皿′ｏ)ﾉ"=>"angry"},
-
+#     "ヽ(ｏ`皿′ｏ)ﾉ"=>"angry"}
+#   }
+load_library('./lib/emoticons.yml')
 def get_japanese_emoticon(file_path, emoticon)
   load_library(file_path)
 
