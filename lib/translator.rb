@@ -16,8 +16,39 @@ def load_library(file_path)
   translator
 end
 
+# "get_emoticon" => {
+#   "%)"=>"(゜.゜)", 
+#   "8D"=>"(^0_0^)", 
+#   ":$"=>"(#^.^#)", 
+#   ":'("=>"(Ｔ▽Ｔ)", 
+#   ":)"=>"(＾ｖ＾)", 
+#   ":*"=>"(*^3^)/~☆", 
+#   ":O"=>"(ΘεΘ;)", 
+#   ":o"=>"o_O", 
+#   ";)"=>"(^_-)", 
+#   "=D"=>"(￣ー￣)", 
+#   ">:("=>"ヽ(ｏ`皿′ｏ)ﾉ", 
+#   "><>"=>">゜))))彡", 
+#   "O:)"=>"☜(⌒▽⌒)☞"},
+#   
+#   "get_meaning" => {
+#     "(#^.^#)"=>"embarrased", 
+#     "(*^3^)/~☆"=>"kiss", 
+#     "(^0_0^)"=>"glasses", 
+#     "(^_-)"=>"wink", 
+#     "(ΘεΘ;)"=>"bored", 
+#     "(゜.゜)"=>"confused", 
+#     "(Ｔ▽Ｔ)"=>"sad", 
+#     "(＾ｖ＾)"=>"happy", 
+#     "(￣ー￣)"=>"grinning", 
+#     ">゜))))彡"=>"fish", 
+#     "o_O"=>"surprised", 
+#     "☜(⌒▽⌒)☞"=>"angel", 
+#     "ヽ(ｏ`皿′ｏ)ﾉ"=>"angry"},
+
 def get_japanese_emoticon(file_path, emoticon)
   load_library(file_path)
+  
 end
 
 def get_english_meaning
