@@ -59,7 +59,7 @@ end
 
 def get_english_meaning(file_path, jp_emoticon)
   library = load_library(file_path)
-  if library["get_emotion"].include?(jp_emoticon)
-    library["get_emotion"][jp_emoticon]
+  if library["get_meaning"].include?(jp_emoticon)
+    library["get_meaning"][jp_emoticon]
   end
 end
