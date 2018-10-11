@@ -8,10 +8,10 @@ def load_library(file_path)
   translator = {"get_meaning" => {}, "get_emoticon" => {}} # empty hash
    # go through yaml to get meanings and emotes
   library.each do |meaning, emoticons|
-    #keys inside get_meaning points to their meanings
-    translator["get_meaning"][emoticons[1]] = meaning 
-    #keys inside get_emoticon points to their JP equivalents
-    translator["get_emoticon"][emoticons[0]] = emoticons[1] 
+    #JP emotes inside get_meaning and keys inside get_meaning points to their meanings
+    translator["get_meaning"][emoticons[1]] = meaning
+    #EN emotes inside get_emoticon and keys inside get_emoticon points to their JP equivalents
+    translator["get_emoticon"][emoticons[0]] = emoticons[1]
   end
   translator
 end
