@@ -1,4 +1,5 @@
 # require modules here
+require 'pry'
 require 'yaml'
 emotes = YAML.load_file('lib/emoticons.yml')
 # emotes = hash of emoticons
