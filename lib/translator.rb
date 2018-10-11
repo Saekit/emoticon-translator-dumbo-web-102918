@@ -48,10 +48,10 @@ end
 #     "ヽ(ｏ`皿′ｏ)ﾉ"=>"angry"}
 #   }
 
-def get_japanese_emoticon(file_path, EN_emoticon)
+def get_japanese_emoticon(file_path, en_emoticon)
   library = load_library(file_path)
-  if library["get_emoticon"].include?(EN_emoticon)
-    library["get_emoticon"][EN_emoticon]
+  if library["get_emoticon"].include?(en_emoticon)
+    library["get_emoticon"][en_emoticon]
   end
 end
 
