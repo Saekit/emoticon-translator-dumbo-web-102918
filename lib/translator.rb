@@ -9,6 +9,8 @@ def load_library(file_path)
   library.each do |meaning, emoticons|
     translator["get_meaning"][emoticons[1]] = meaning
     translator["get_emoticon"][emoticons[0]] = emoticons[1]
+  end
+  translator
 end
 
 def get_japanese_emoticon
